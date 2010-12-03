@@ -1,0 +1,12 @@
+Django uWSGI service controller. Handles the start, stop, reload and restarting of a given Django 
+application. 
+
+For more information on uWSGI, see http://projects.unbit.it/uwsgi/
+
+Use the wsgi python file to run the wsgi-compliant application. The default file is [appname]/django_wsgi.py.
+Starts the uWSGI command using unix sockets named by the app name. The pid file and socket are stored
+in the temp workspace.
+
+Use the 'reload' argument to restart gracefully. Requires uWSGI 0.9.5.
+
+For more help, ./django-wsgi-svc.py --help
